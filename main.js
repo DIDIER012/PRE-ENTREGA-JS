@@ -10,7 +10,7 @@ const compraDePrendas = () => {
 
 do {
     prenda = prompt ("¿que clase de prenda deseas comprar buzo, remeras o pantalones?");
-    cantidad = parseInt(prompt ("¿cuantos deseas llevar?"));
+    cantidad = validarCantidad(parseInt(prompt ("¿cuantos deseas llevar?")));
 
     let cantitadadTotal = cantidad;
 
@@ -55,7 +55,7 @@ const Descuento = precioTotal => {
         precioTotal >= 15000
         return precioTotal * 0.80;
     } else {
-        return precioTotal
+        return precioTotal;
     }
 }
 
