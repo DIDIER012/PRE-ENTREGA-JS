@@ -17,13 +17,13 @@ do {
 
     switch (prenda) {
         case 'buzo': 
-            precio = 20.000;
+            precio = 20000;
             break;
         case'remeras':
-            precio = 30.000
+            precio = 30000
             break;
         case 'pantalones':
-            precio = 15.000
+            precio = 15000
             break;
         default: 
         alert("hay un error a la hora de ingresar los prodectos o no se encentra en stock");
@@ -52,7 +52,7 @@ do {
 
 const Descuento = precioTotal => {
     if (precioTotal) {
-        precioTotal >= 15.000
+        precioTotal >= 15000
         return precioTotal * 0.80;
     } else {
         return precioTotal
