@@ -51,15 +51,15 @@ do {
 
 
 const Descuento = precioTotal => {
-    if (precioTotal) {
-        precioTotal >= 15000
-        return precioTotal * 0.80;
+    if (precioTotal >= 15000) {
+        return alert("tienes un descuento de" + precioTotal * 0.10);
     } else {
         return precioTotal;
     }
 }
 
 let precioTotal = compraDePrendas();
+precioTotal = Descuento(precioTotal);
 
 if (confirm("¿Quieres envío a domicilio o retiras del local?")) {
     precioTotal += 2000;
