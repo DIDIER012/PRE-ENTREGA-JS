@@ -12,7 +12,7 @@ do {
     prenda = prompt ("¿que clase de prenda deseas comprar buzo, remeras o pantalones?");
     cantidad = validarCantidad(parseInt(prompt ("¿cuantos deseas llevar?")));
 
-    let cantitadadTotal = cantidad;
+    let cantidadTotal = cantidad;
 
 
     switch (prenda) {
@@ -31,7 +31,7 @@ do {
         cantidad = 0;
     }
 
-    precioTotal += precio * cantitadadTotal;
+    precioTotal += precio * cantidadTotal;
     seguirComprando = confirm("¿Querés agregar otra prenda?");
     } while (seguirComprando);
 
@@ -40,7 +40,7 @@ do {
     const validarCantidad = (cantidad) => {
         while (Number.isNaN(cantidad) || cantidad === 0) {
             if (cantidad !== 0) {
-                alert('Debe agregar un nuemro')
+                alert('Debe agregar un numero')
             } else{ 
                 alert ('Debe agregar un numero distinto a cero')
         }
@@ -52,7 +52,7 @@ do {
 
 const Descuento = precioTotal => {
     if (precioTotal >= 15000) {
-        return alert("tienes un descuento de" + precioTotal * 0.10);
+        return alert("tienes un descuento de" + (precioTotal * 0.10).toString());
     } else {
         return precioTotal;
     }
